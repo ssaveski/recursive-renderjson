@@ -15,7 +15,7 @@ const Menu = ({data}) => {
     let getAllNodes = [];
 
     useEffect(() => {
-        setMenu(displayTree(data));
+        setMenu(data);
         takeAllExpandableNodes(data);
     }, []);
 
@@ -63,7 +63,7 @@ const Menu = ({data}) => {
                 onNodeToggle={handleChange}
                 expanded={expanded}
             >
-                {menu}
+                {displayTree(menu)}
             </TreeView>
             <Button variant="contained" color="secondary" className="btn"
                     onClick={() => toggleExpandCollapseAll(areAllExpanded)}>
