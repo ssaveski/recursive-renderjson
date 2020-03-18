@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "label": "Menu Item 1",
+    "children": []
+  },
+  {
+    "id": "2",
+    "label": "Menu Item 2",
+    "children": [
+      {
+        "id": "10",
+        "label": "Menu Item 2.1",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "Menu Item 3",
+    "children": [
+      {
+        "id": "4",
+        "label": "Menu Item 3.1",
+        "children": [
+          {
+            "id": "5",
+            "label": "Menu Item 3.1.1",
+            "children": [
+              {
+                "id": "6",
+                "label": "Menu Item 3.1.1.1",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "label": "Menu Item 3.2",
+        "children": []
+      }
+    ]
+  }
+]
+

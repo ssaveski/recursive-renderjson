@@ -1,0 +1,21 @@
+{
+  "name": "symphonyssaveski",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "0.9.5"
+  },
+  "devDependencies": {
+    "@material-ui/icons": "^4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
