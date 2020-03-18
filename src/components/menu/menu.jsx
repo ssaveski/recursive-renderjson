@@ -24,7 +24,7 @@ const Menu = ({data}) => {
             setAreAllExpanded(expanded.toString() === allExpandableNodes.toString());
     }, [expanded]);
 
-    function displayTree(jsonData) {
+    const displayTree =(jsonData) => {
         let newMenu = null;
         newMenu = jsonData.map((branch, index) => {
             return (
@@ -34,14 +34,14 @@ const Menu = ({data}) => {
             );
         });
         return newMenu;
-    }
+    };
 
     const handleChange = (event, nodes) => {
         nodes.sort();
         setExpanded(nodes);
     };
 
-    function takeAllExpandableNodes(nodes) {
+    const takeAllExpandableNodes = (nodes) => {
         nodes.map((branch) => {
             if (branch.id && branch.children.length > 0)
                 getAllNodes.push(branch.id);
@@ -49,7 +49,7 @@ const Menu = ({data}) => {
                 takeAllExpandableNodes(branch.children)
         });
         setAllExpandableNodes(getAllNodes.sort());
-    }
+    };
 
     const toggleExpandCollapseAll = (areAllExpanded) => {
         !areAllExpanded ? setExpanded(allExpandableNodes) : setExpanded([])
